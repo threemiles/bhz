@@ -1,0 +1,5 @@
+#FIND_LIBRARY(PTHREAD_LIB libpthread.so /usr/lib NO_DEFAULT_PATH)
+#SET(CMAKE_EXE_LINKER_FLAGS " -lpthread")
+INCLUDE_DIRECTORIES(/usr/local/boost/include)
+ADD_EXECUTABLE(App App.cpp)
+#TARGET_LINK_LIBRARIES(App  /usr/local/mysql/lib/libmysqlclient.so)
